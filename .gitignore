@@ -1,0 +1,2 @@
+# Ignore TPM-managed plugins (keep config repo clean)
+plugins/
