@@ -24,6 +24,11 @@
 - Follow Conventional Commit style as seen in history (e.g., `chore: update statusline`).
 - PRs should describe intent, summarize changes, and include before/after notes for UI-facing tweaks.
 
+## Agent-Specific Instructions (Codex)
+- For commit requests covering all changes, include dot directories (e.g., `.claude/`, `.serena/`) and split into multiple commits when appropriate.
+- For staged-only commits, commit just what is staged; still include dot directories if they are staged.
+- For `commit-and-push`, run commit then push; for `push`, only push; for `pr`, open a PR for the current changes.
+
 ## Security & Configuration Tips
 - Do not store secrets or tokens in `tmux.conf`; use environment variables where needed.
 - Keep the plugin list minimal to reduce startup time and maintenance overhead.
